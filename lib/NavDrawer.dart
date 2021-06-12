@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:pegawai/main.dart';
+import 'package:pegawai/HomePage.dart';
 
 class NavDrawer extends StatelessWidget {
   @override
@@ -23,7 +24,7 @@ class NavDrawer extends StatelessWidget {
             onTap: () {
               Navigator.push(context,
                   MaterialPageRoute(builder: (BuildContext context) {
-                return MyHomePage();
+                return HomePage();
               }));
             },
           )

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'package:pegawai/main.dart';
+import 'package:pegawai/HomePage.dart';
 
 class AddEditPage extends StatefulWidget {
   final List list;
@@ -105,7 +106,7 @@ class _AddEditPageState extends State<AddEditPage> {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => MyHomePage(),
+                    builder: (context) => HomePage(),
                   ),
                 );
                 debugPrint('Clicked RaisedButton Button');
