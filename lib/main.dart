@@ -3,6 +3,7 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'package:pegawai/AddEditPage.dart';
+import 'package:pegawai/NavDrawer.dart';
 
 void main() {
   runApp(MyApp());
@@ -46,6 +47,7 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(
         title: Text('Daftar Pegawai'),
       ),
+      drawer: NavDrawer(),
       floatingActionButton: FloatingActionButton(
         child: Icon(Icons.add),
         onPressed: () {
